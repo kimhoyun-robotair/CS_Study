@@ -5,7 +5,7 @@ from torch.autograd import Variable
 
 torch.manual_seed(777)
 
-xy = np.load("/home/kimhoyun/CS_Study/Automotive_AI/week04/lecture6_data.txt", dtype=np.float32)
+xy = np.loadtxt("/home/kimhoyun/CS_Study/Automotive_AI/week04/lecture6_data.txt", dtype=np.float32)
 x_data = xy[:, 2:-1]
 y_data = xy[:, [-1]]
 
